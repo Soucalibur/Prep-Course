@@ -1,0 +1,225 @@
+/* ----- Global ----- */
+
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+/* ----- Clases ----- */
+
+.grid{
+    
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-auto-rows: 60px;
+    
+}
+
+#backGris{
+    background-color: rgba(219, 219, 219, 0.56);
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    
+}
+#imagenFondo{
+    
+    width: 100%;
+    height: 100%;
+    position:fixed;
+    z-index: -2;
+    
+}
+
+
+.header{
+    grid-column: 1/13;
+    grid-row: 1/4;
+
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-auto-rows: 60px;
+}
+
+#h1Title{
+    grid-column: 1/13;
+    grid-row: 1/2;
+
+    text-align: center;
+    color: yellow;
+    
+}
+
+#h3Subtitle{
+    grid-column: 1/13;
+    grid-row: 2/3;
+
+    text-align: center;
+    
+}
+
+#h4Subtitle{
+    grid-column: 1/13;
+    grid-row: 3/4;
+
+    text-align: center;
+    
+}
+
+
+
+.descripcion{
+    grid-column: 1/13;
+    grid-row: 4/6;
+
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-auto-rows: 30px;
+
+    background-color: rgba(160, 101, 216, 0.365);
+}
+
+#spanId{
+    grid-column: 1/13;
+    grid-row: 2/5;
+
+    font-size: 18px;
+    margin: 50px;
+    text-align: center;
+    align-self: center;
+}
+
+#linkDescripcion{
+    grid-column: 1/13;
+    grid-row: 1/3;
+    text-align: center;
+    align-self: center;
+}
+
+
+
+#thirdDiv{
+    grid-column: 1/13;
+    grid-row: 6/27;
+    
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-auto-rows: 60px;
+    background-color: rgba(79, 175, 143, 0.786);
+    gap: 10px;
+    padding: 10px;
+    border: solid 2px;
+}
+
+.item1{
+    height: 600px;
+    width: 500px;
+    grid-column: 2/3;
+    grid-row: 1;
+    
+}
+
+#textItem1{
+    grid-column: 1;
+    grid-row: 1/10;
+    text-align: center;
+    align-self: center;
+}
+
+.item2{
+    grid-column:2/3 ;
+    grid-row:10 ;
+    height: 600px;
+    width: 500px;
+}
+
+#textItem2{
+    grid-column: 1;
+    grid-row: 10/19;
+    text-align: center;
+    align-self: center;
+}
+
+
+
+/* ----- Página CV ----- */
+
+#id1{
+    grid-column: 1/13;
+    grid-row:1/4 ;
+}
+
+#id2{
+    grid-column: 1/13;
+    grid-row: 4/7;
+}
+
+#id3{
+    grid-column: 1/13;
+    grid-row: 7/10;
+}
+
+#id4{
+    grid-column: 1/13;
+    grid-row: 10/12;
+}
+
+#id5{
+    grid-column: 1/13;
+    grid-row: 12/15;
+}
+
+#id6{
+    grid-column: 1/13;
+    grid-row: 16/19;
+}
+
+#id7{
+    grid-column: 1/13;
+    grid-row: 19/24;
+}
+
+#id8{
+    grid-column: 1/13;
+    grid-row: 1/24;
+}
+
+.h2{
+    grid-column:1/13 ;
+    grid-row: 1 ;
+    color: aquamarine;
+    text-align: center;
+    align-self: center;
+
+}
+
+.p{
+    
+    grid-column: 2/12;
+    grid-row: 2/4;
+    text-align: center;
+    color: white;
+}
+
+#imgP{
+    grid-column:6/8 ;
+    width: 200px;
+    height: 200px;
+    
+}
+
+
+
+#img2{
+    grid-column: 1/13;
+    grid-row: 1/24;
+    width: 92%;
+    height: 100%;
+    object-fit: cover;
+    
+    z-index: -1;
+    margin: 50px;
+    margin-top: 0;
+}

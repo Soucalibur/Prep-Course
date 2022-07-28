@@ -27,7 +27,7 @@ function sumarArray(numeros, cb) {
   // No es necesario devolver nada
   //Tu código:
   x = numeros.reduce(function(acc,elemento){
-    return acc + elemento;
+    return acc  + elemento;
   })
   cb(x);
   
