@@ -10,6 +10,15 @@ function deObjetoAmatriz(objeto){
       C: 3
     }) ➞ [["D", 1], ["B", 2], ["C", 3]]*/
   //Escribe tu código aquí
+  array = []
+  nuevoArray = []
+  for (i in objeto){
+    nuevoArray = []
+    nuevoArray[0]= i;
+    nuevoArray[1]= objeto[i]
+    array.push(nuevoArray)
+  }
+  return array;
 }
 
 
@@ -18,6 +27,18 @@ function numberOfCharacters(string) {
   //en formato par clave-valor.
   //Ej: Recibe ---> "adsjfdsfsfjsdjfhacabcsbajda" || Devuelve ---> { a: 5, b: 2, c: 2, d: 4, f: 4, h:1, j: 4, s: 5 } 
   //Escribe tu código aquí
+  string = string.replace(/\s/g, "");
+  final = {} //Donde guardamos los resultados
+  
+  for(let i in string){ //Cogemos el indice de cada caracter
+	  if(string[i] in final) { //Si ya existe, simplemente aumentamos el contador
+		  final[string[i]] +=  1
+	  } 
+    else { // Si no existe, lo inicializamos a 1
+		  final[string[i]] = 1
+    }
+  }
+  return final;
 }
 
 
@@ -26,6 +47,18 @@ function capToFront(s) {
   //al principio de la palabra.
   //Ejemplo: soyHENRY -> HENRYsoy
   //Escribe tu código aquí
+  objeto = {0:"",1:""}
+  string = ""
+  for (i in s){
+    if (s[i]===s[i].toUpperCase()){
+      objeto[0]+=s[i];
+    }
+    else{
+      objeto[1]+=s[i];
+    }
+  }
+  string = objeto[0]+objeto[1]
+  return string;
 }
 
 
@@ -35,6 +68,7 @@ function asAmirror(str) {
   //pero con cada una de sus palabras invertidas, como si fuera un espejo.
   //Ej: Recibe ---> "The Henry Challenge is close!" || Devuelve ---> "ehT yrneH egnellahC si !esolc"
   //Escribe tu código aquí
+
 } 
 
 
